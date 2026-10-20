@@ -1,0 +1,59 @@
+{
+  "name": "@askeleven/prompt-fence",
+  "version": "0.1.0",
+  "description": "Stop prompt injection in AI inbox triage and chat agents. Scans emails, web pages and messages for instructions aimed at the AI (hidden HTML, invisible Unicode, base64, fake system markers), fences untrusted content for the prompt, and gates the tool calls an agent makes after reading it. CLI, library and MCP server. Zero dependencies.",
+  "type": "module",
+  "license": "MIT",
+  "author": "AskEleven",
+  "homepage": "https://github.com/askeleven/prompt-fence",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/askeleven/prompt-fence.git"
+  },
+  "bugs": {
+    "url": "https://github.com/askeleven/prompt-fence/issues"
+  },
+  "keywords": [
+    "prompt-injection",
+    "indirect-prompt-injection",
+    "llm-security",
+    "ai-security",
+    "spotlighting",
+    "email",
+    "inbox",
+    "ai-agents",
+    "guardrails",
+    "mcp",
+    "mcp-server"
+  ],
+  "bin": {
+    "prompt-fence": "bin/cli.js"
+  },
+  "main": "src/index.js",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "bin",
+    "src",
+    "types",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "build:types": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build:types && npm test"
+  },
+  "types": "types/index.d.ts",
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "typescript": "^5.9.3"
+  }
+}
