@@ -1,5 +1,5 @@
 /**
- * The phrase rules. Each pattern runs on normalised text: lowercase, invisible characters
+ * The phrase rules. Each pattern runs on normalized text: lowercase, invisible characters
  * removed, look-alike letters folded to ASCII, whitespace collapsed (line breaks kept as
  * "\n"). Rules marked raw run on the lowercased original instead, for scripts the
  * look-alike folding would mangle.

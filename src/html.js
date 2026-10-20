@@ -376,7 +376,7 @@ function hiddenBy(name, attributes, style, color, background) {
     if (isTransparent(color)) return 'transparent text'
     const fg = parseColor(color)
     const bg = parseColor(background ?? '#ffffff')
-    if (fg && bg && contrast(fg, bg) < 1.15) return `text colour matches background (${color} on ${background ?? 'white'})`
+    if (fg && bg && contrast(fg, bg) < 1.15) return `text color matches background (${color} on ${background ?? 'white'})`
   }
   return ''
 }

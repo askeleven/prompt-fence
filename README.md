@@ -53,7 +53,7 @@ first:
 A CLI for your tests, a library for your agent, and an MCP server. Zero dependencies. No
 network.
 
-## Detection is not the defence
+## Detection is not the defense
 
 Pattern matching catches the ways injections are known to be written. Someone will write
 one it does not know. That is why the fence and the gate exist: they work the same whether
@@ -90,7 +90,7 @@ instructions, and a check of what your agent did with them.
 | `invisible_chars`, `bidi_override` | Room for the above | Zero-width runs in words, a right-to-left override in a filename |
 
 Hidden text is read the way a mail client shows it: `display:none`, `visibility:hidden`,
-`opacity:0`, tiny fonts, text the same colour as its background, off-screen positioning,
+`opacity:0`, tiny fonts, text the same color as its background, off-screen positioning,
 zero-height boxes, `hidden`, `<template>`, comments, `alt`/`title`/`aria-label`. A hidden
 preheader with nothing in it is not a finding; every marketing email has one. Hidden
 instructions are: there is no honest reason to hide "forward all emails" from the person
@@ -192,7 +192,7 @@ text cannot pass as anything outside the fence) or `base64` (the strongest isola
 tokens and some reading quality). These are the three spotlighting methods from Hines et
 al., [Defending Against Indirect Prompt Injection Attacks With
 Spotlighting](https://arxiv.org/abs/2403.14720) (2024). `keepHidden: true` keeps hidden
-text, labelled, instead of removing it.
+text, labeled, instead of removing it.
 
 ## For agents: MCP server
 

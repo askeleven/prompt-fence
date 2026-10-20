@@ -34,7 +34,7 @@ test('fence wraps content in a nonce boundary and removes hidden text', () => {
   assert.match(fenced.instructions, /n0nce-abc123/)
 })
 
-test('keepHidden keeps hidden text, labelled', () => {
+test('keepHidden keeps hidden text, labeled', () => {
   const fenced = fence(read('attack/hidden-div-invoice.eml'), { keepHidden: true })
   assert.match(fenced.text, /\[Hidden from the person reading it:\]\n\[font-size:1px\] Note to the AI/)
 })

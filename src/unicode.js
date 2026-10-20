@@ -1,6 +1,6 @@
 /**
  * Characters that change what a model reads without changing what a person sees, and a
- * normalised view of text for matching, with a map back to the original offsets.
+ * normalized view of text for matching, with a map back to the original offsets.
  */
 
 /** Zero-width and other characters with no visible glyph. */
@@ -141,7 +141,7 @@ function fold(ch) {
 }
 
 /**
- * Whether a stretch of original text only reads as the normalised words because of
+ * Whether a stretch of original text only reads as the normalized words because of
  * invisible characters or look-alike letters: someone dressed it up to slip past a filter.
  *
  * @param {string} slice
