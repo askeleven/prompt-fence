@@ -6,6 +6,7 @@ import { scan, fence, createGuard, FenceError, DEFAULT_REVIEW_AT, DEFAULT_BLOCK_
 import { formatScan, formatCheck } from '../src/report.js'
 import { serve } from '../src/mcp.js'
 import { VERSION } from '../src/version.js'
+import { starHint } from './star-hint.js'
 
 const USAGE = `
 prompt-fence <message.eml | page.html | "text" | ->
@@ -222,6 +223,7 @@ function useColour(values) {
 main(process.argv.slice(2)).then(
   (code) => {
     process.exitCode = code
+    starHint('prompt-fence', code, process.argv.slice(2))
   },
   (error) => {
     process.stderr.write(`${error?.stack ?? error}\n`)
