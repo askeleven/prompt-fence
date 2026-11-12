@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.askeleven/prompt-fence",
+  "title": "Prompt Fence",
+  "description": "Catches prompt injection in emails and web pages and gates the agent's next tool calls.",
+  "repository": {
+    "url": "https://github.com/askeleven/prompt-fence",
+    "source": "github"
+  },
+  "websiteUrl": "https://github.com/askeleven/prompt-fence",
+  "version": "0.1.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@askeleven/prompt-fence",
+      "version": "0.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "mcp"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 {
   "name": "@askeleven/prompt-fence",
-  "version": "0.1.1",
+  "version": "0.1.2",
+  "mcpName": "io.github.askeleven/prompt-fence",
   "description": "Stop prompt injection in AI inbox triage and chat agents. Scans emails, web pages and messages for instructions aimed at the AI (hidden HTML, invisible Unicode, base64, fake system markers), fences untrusted content for the prompt, and gates the tool calls an agent makes after reading it. CLI, library and MCP server. Zero dependencies.",
   "type": "module",
   "license": "MIT",
